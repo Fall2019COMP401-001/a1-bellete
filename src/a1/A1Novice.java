@@ -24,6 +24,7 @@ public class A1Novice {
 			    sum += wapr;
 		   }
 		    System.out.println(Fir + "." + " " + last + ":" + " " + String.format("%,.2f", sum));
+		    sum = 0;
 	    }
 	    scan.close();
 	}
