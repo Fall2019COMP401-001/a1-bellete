@@ -9,14 +9,14 @@ public class A1Novice {
 		Scanner scan = new Scanner(System.in);
 		
 		double sum = 0;
-	    
-	    int alcu = scan.nextInt();
-	    for (int i=0; i<alcu; i++); {
+		
+		int alcu = scan.nextInt();
+	    for (int i=0; i < alcu; i++) {
 	    	String first = scan.next();
 	    	char Fir = first.charAt(0);
 		    String last = scan.next();
 		    int num = scan.nextInt();
-		    for  (int a=0; a<num; a++);{
+		    for  (int a=0; a  < num; a++) {
 		    	int solnum = scan.nextInt();
 			    String name = scan.next();
 			    double price = scan.nextDouble();
