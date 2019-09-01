@@ -32,12 +32,14 @@ public class A1Adept {
 					if (itnalst[i].equals(namby)) {
 						one = inprilst[i]*buynu;
 						perall+=one;
+						
 					}
 				}
-				amtlst[a] = perall;
-				perall = 0;
-				}
+				
 			}
+			amtlst[a] = perall;
+			perall = 0;
+		}
 			biggest = findValueMax(amtlst);
 			smallest = findValueMin(amtlst);
 			for (int c=0; c<amtlst.length; c++) {
