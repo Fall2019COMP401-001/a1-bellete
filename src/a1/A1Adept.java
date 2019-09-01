@@ -38,8 +38,8 @@ public class A1Adept {
 				perall = 0;
 				}
 			}
-			biggest = A1Example.findValueMax(amtlst);
-			smallest = A1Example.findValueMin(amtlst);
+			biggest = findValueMax(amtlst);
+			smallest = findValueMin(amtlst);
 			for (int c=0; c<amtlst.length; c++) {
 				if (biggest == amtlst[c]) {
 				System.out.println("Biggest: " + namelsfir[c] + " "+ namelslas[c] + " (" + biggest + ")");
@@ -50,8 +50,43 @@ public class A1Adept {
 				System.out.println("Smallest: " + namelsfir[d] + " "+ namelslas[d] + " (" + smallest + ")");
 				}
 			}
-			ave = A1Example.calculateValueSum(amtlst)/amtlst.length;
+			ave = calculateValueSum(amtlst)/amtlst.length;
 			System.out.println("Average: " + String.format("%,.2f", ave));
 			scan.close();
 		}	
+
+
+static double calculateValueSum(double[] vals) {
+	double sum = 0;
+	for (int i=0; i<vals.length; i++) {
+		sum += vals[i];
+	}
+	
+	return sum;
+}
+
+static double findValueMin(double[] vals) {
+	
+	double cur_min = vals[0];
+	
+	for (int i=1; i < vals.length; i++) {
+		if (vals[i] < cur_min) {
+			cur_min = vals[i];
+		}
+	}
+	
+	return cur_min;
+}
+
+static double findValueMax(double[] vals) {
+	double cur_max = vals[0];
+	for (int i=1; i < vals.length; i++) {
+		if (vals[i] > cur_max) {
+			cur_max = vals[i];
+		}
+	}
+	
+	return cur_max;
+}
+
 }

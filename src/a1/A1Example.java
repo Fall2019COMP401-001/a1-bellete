@@ -23,7 +23,7 @@ public class A1Example {
 		
 		// Create an array to store numbers.
 		
-		double[] values = new int[count];
+		int[] values = new int[count];
 		
 		
 		// Read values into the array
@@ -37,9 +37,9 @@ public class A1Example {
 		
 		// Use helper functions to calculate sum, min, and max
 		
-		double sum = calculateValueSum(values);
-		double min = findValueMin(values);
-		double max = findValueMax(values);
+		int sum = calculateValueSum(values);
+		int min = findValueMin(values);
+		int max = findValueMax(values);
 		
 		// Print results
 		
@@ -60,9 +60,9 @@ public class A1Example {
 	 * Input array must not be null.
 	 */
 	
-	static double calculateValueSum(double[] vals) {
+	static int calculateValueSum(int[] vals) {
 		
-		double sum = 0;
+		int sum = 0;
 		
 		for (int i=0; i<vals.length; i++) {
 			sum += vals[i];
@@ -82,10 +82,10 @@ public class A1Example {
 	 * Input array must not be null and must contain at least one value.
 	 */
 	
-	static double findValueMin(double[] vals) {
+	static int findValueMin(int[] vals) {
 		
 		// Initialize current minimum to first value in array.
-		double cur_min = vals[0];
+		int cur_min = vals[0];
 		
 		// Starting with second value (if any), compare each value
 		// in array with current minimum and replace if smaller.
@@ -110,10 +110,10 @@ public class A1Example {
 	 * Input array must not be null and must contain at least one value.
 	 */
 	
-	static double findValueMax(double[] vals) {
+	static int findValueMax(int[] vals) {
 		
 		// Initialize current minimum to first value in array.
-		double cur_max = vals[0];
+		int cur_max = vals[0];
 		
 		// Starting with second value (if any), compare each value
 		// in array with current minimum and replace if smaller.
