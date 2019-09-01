@@ -32,10 +32,8 @@ public class A1Adept {
 					if (itnalst[i].equals(namby)) {
 						one = inprilst[i]*buynu;
 						perall+=one;
-						
 					}
 				}
-				
 			}
 			amtlst[a] = perall;
 			perall = 0;
