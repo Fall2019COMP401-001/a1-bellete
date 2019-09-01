@@ -8,19 +8,22 @@ public class A1Novice {
 		
 		Scanner scan = new Scanner(System.in);
 		
-		double sum = 0;
+		String first = "", last = "", name = "";
+		int num = 0, solnum = 0;
+		double sum = 0, price = 0, wapr = 0;
+		char Fir = 0;
 		
 		int alcu = scan.nextInt();
 	    for (int i=0; i < alcu; i++) {
-	    	String first = scan.next();
-	    	char Fir = first.charAt(0);
-		    String last = scan.next();
-		    int num = scan.nextInt();
+	    	first = scan.next();
+	    	Fir = first.charAt(0);
+		    last = scan.next();
+		    num = scan.nextInt();
 		    for  (int a=0; a  < num; a++) {
-		    	int solnum = scan.nextInt();
-			    String name = scan.next();
-			    double price = scan.nextDouble();
-			    double wapr = solnum * price;
+		    	solnum = scan.nextInt();
+			    name = scan.next();
+			    price = scan.nextDouble();
+			    wapr = solnum * price;
 			    sum += wapr;
 		   }
 		    System.out.println(Fir + "." + " " + last + ":" + " " + String.format("%,.2f", sum));
