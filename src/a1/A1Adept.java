@@ -42,12 +42,12 @@ public class A1Adept {
 			smallest = findValueMin(amtlst);
 			for (int c=0; c<amtlst.length; c++) {
 				if (biggest == amtlst[c]) {
-				System.out.println("Biggest: " + namelsfir[c] + " "+ namelslas[c] + " (" + biggest + ")");
+				System.out.println("Biggest: " + namelsfir[c] + " "+ namelslas[c] + " (" + String.format("%,.2f", biggest) + ")");
 				}
 			}
 			for (int d=0; d<amtlst.length; d++) {
 				if (smallest == amtlst[d]) {
-				System.out.println("Smallest: " + namelsfir[d] + " "+ namelslas[d] + " (" + smallest + ")");
+				System.out.println("Smallest: " + namelsfir[d] + " "+ namelslas[d] + " (" + String.format("%,.2f", smallest) + ")");
 				}
 			}
 			ave = calculateValueSum(amtlst)/amtlst.length;
