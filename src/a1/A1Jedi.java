@@ -37,7 +37,7 @@ public class A1Jedi {
 		}
 		for (int countIt = 0; countIt < totalItnum; countIt ++) {
 			if (eachCusnum[countIt]== 0) {
-				System.out.println("No customers bought"+itName[countIt]);
+				System.out.println("No customers bought "+itName[countIt]);
 			} else {
 				System.out.println(eachCusnum[countIt]+" customers bought " + eachItnum[countIt] + " " +itName[countIt]);
 			}
